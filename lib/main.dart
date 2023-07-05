@@ -4,6 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
+//TODO crear un navbar
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

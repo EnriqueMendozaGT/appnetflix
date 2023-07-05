@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'ScaffoldApp',
+      title: 'Netflix',
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(title: 'ScaffoldApp Home'),
+      home: MyHomePage(title: 'Netflix'),
     );
   }
 }

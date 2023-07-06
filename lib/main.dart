@@ -1,35 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_app/inicio.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-//TODO crear un navbar
+//* Tittle class
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Netflix',
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(title: 'Netflix'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, this.title}) : super(key: key);
-
-  final String? title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
+    return const MaterialApp(home: InicioPage());
   }
 }

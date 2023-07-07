@@ -12,6 +12,7 @@ class CartelPrincipal extends StatelessWidget {
       children: <Widget>[
         cabecera(),
         infoSerie(),
+        botonera(),
       ],
     );
   }
@@ -95,5 +96,60 @@ class CartelPrincipal extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  Widget botonera() {
+    return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            const Column(
+              children: <Widget>[
+                Icon(
+                  Icons.play_arrow,
+                  color: Colors.white,
+                ),
+                SizedBox(
+                  height: 3,
+                ),
+                Text(
+                  "Mi lista",
+                  style: TextStyle(color: Colors.white, fontSize: 10),
+                )
+              ],
+            ),
+            TextButton.icon(
+              onPressed: () {},
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.white)),
+              icon: const Icon(
+                Icons.play_arrow,
+                color: Colors.black,
+              ),
+              label: const Text(
+                "Reproducir",
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            const Column(
+              children: <Widget>[
+                Icon(
+                  Icons.info_outline,
+                  color: Colors.white,
+                ),
+                SizedBox(
+                  height: 3,
+                ),
+                Text(
+                  "Info",
+                  style: TextStyle(color: Colors.white, fontSize: 10),
+                )
+              ],
+            ),
+          ],
+        ));
   }
 }
